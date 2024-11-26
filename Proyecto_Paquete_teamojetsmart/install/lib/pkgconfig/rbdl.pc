@@ -1,0 +1,13 @@
+prefix=/home/user/lab_ws/install
+libdir=/home/user/lab_ws/install/lib
+includedir=/home/user/lab_ws/install/include/rbdl
+
+Name: RBDL
+Description: Rigid Body Dynamics Library
+URL: https://github.com/rbdl/rbdl
+Version: 3.2.0
+Requires: eigen3
+Conflicts:
+Libs: -L${libdir} -lrbdl -Wl,-rpath ${libdir}
+Libs.private:
+Cflags: -I${includedir}

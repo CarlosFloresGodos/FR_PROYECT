@@ -1,0 +1,30 @@
+robot_er:
+  robot_er_joint_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+      - Slider_1
+      - Revolute_2
+      - Revolute_3
+      - Slider_4
+      - Revolute_6
+      - Revolute_1
+
+    gains:
+      Slider_1: {p: 50000, d: 5000, i: 100, i_clamp: 0}
+      Revolute_2:   {p: 40000, d: 5000, i: 100, i_clamp: 0}
+      Revolute_3:   {p: 35000, d: 5000, i: 100, i_clamp: 0}
+      Slider_4:   {p: 30000, d: 5000, i: 100, i_clamp: 0}
+      Revolute_6:   {p: 30000, d: 5000, i: 100, i_clamp: 0}
+      Revolute_1:   {p: 50000, d: 5000, i: 100, i_clamp: 0}
+
+
+#  gripper_controller:
+#    type: "position_controllers/JointTrajectoryController"
+#    joints:
+#      - gripper__gripper_left
+#      - gripper__gripper_right
+#
+#    gains:
+#      gripper__gripper_left:  {p: 1000.0, d: 50, i: 10, i_clamp: 0.0}
+#      gripper__gripper_right: {p: 1000.0, d: 50, i: 10, i_clamp: 0.0}
+

@@ -1,0 +1,13 @@
+controller_manager_ns: controller_manager
+controller_list:
+  - name: robot_er/robot_er_joint_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - Slider_1
+      - Revolute_2
+      - Revolute_3
+      - Slider_4
+      - Revolute_6
+      - Revolute_1
